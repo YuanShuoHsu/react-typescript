@@ -6,6 +6,7 @@ type PersonListProps = {
     last: string;
   }[];
 };
+
 export default function PersonList(props: PersonListProps) {
   return (
     <div className={styles["personList"]}>
