@@ -1,5 +1,4 @@
-import styles from "./index.module.scss";
-import { Name } from "../Person/index.types";
+import { Name } from "./Person.types";
 
 type PersonListProps = {
   names: Name[];
@@ -7,7 +6,7 @@ type PersonListProps = {
 
 export default function PersonList(props: PersonListProps) {
   return (
-    <div className={styles["personList"]}>
+    <div>
       {props.names.map((name) => {
         return (
           <h2 key={name.first}>

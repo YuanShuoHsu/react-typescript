@@ -1,5 +1,4 @@
 import { ChangeEvent } from "react";
-import styles from "./index.module.scss";
 
 type InputProps = {
   value: string;
@@ -12,7 +11,7 @@ export default function Input({ value, handleChange }: InputProps) {
   };
 
   return (
-    <div className={styles["input"]}>
+    <div>
       <input type="text" value={value} onChange={handleInputChange} />
     </div>
   );

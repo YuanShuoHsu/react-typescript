@@ -1,5 +1,3 @@
-import styles from "./index.module.scss";
-
 type StatusProps = {
   status: "loading" | "success" | "error";
 };
@@ -14,7 +12,7 @@ export default function Status(props: StatusProps) {
     message = "Error fetching data";
   }
   return (
-    <div className={styles["status"]}>
+    <div>
       <h2>Status - {message}</h2>
     </div>
   );

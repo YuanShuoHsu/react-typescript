@@ -1,5 +1,3 @@
-import styles from "./index.module.scss";
-
 type GreetProps = {
   name: string;
   messageCount?: number;
@@ -10,7 +8,7 @@ export default function Greet(props: GreetProps) {
   const { messageCount = 0 } = props;
 
   return (
-    <div className={styles["greet"]}>
+    <div>
       <h2>
         {props.isLoggedIn
           ? `Welcome ${props.name}! You have ${messageCount} unread messages.`
