@@ -6,14 +6,14 @@ type InputProps = {
   handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
 };
 
-export default function Input(props: InputProps) {
+export default function Input({ value, handleChange }: InputProps) {
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     console.log(event);
   };
 
   return (
     <div className={styles["input"]}>
-      <input type="text" value={props.value} onChange={handleInputChange} />
+      <input type="text" value={value} onChange={handleInputChange} />
     </div>
   );
 }

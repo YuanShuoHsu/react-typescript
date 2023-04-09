@@ -1,10 +1,8 @@
 import styles from "./index.module.scss";
+import { Name } from "../Person/index.types";
 
 type PersonListProps = {
-  names: {
-    first: string;
-    last: string;
-  }[];
+  names: Name[];
 };
 
 export default function PersonList(props: PersonListProps) {
