@@ -1,5 +1,4 @@
 import { useState } from "react";
-import styles from "./index.module.scss";
 
 type AuthUser = {
   name: string;
@@ -21,7 +20,7 @@ export default function User() {
   // };
 
   return (
-    <div className={styles["user"]}>
+    <div>
       <button onClick={handleLogin}>Login</button>
       {/* <button onClick={handleLogout}>Logout</button> */}
       <div>User name is {user.name}</div>

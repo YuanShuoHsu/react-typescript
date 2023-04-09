@@ -1,4 +1,3 @@
-import styles from "./index.module.scss";
 import { useReducer } from "react";
 
 type CounterState = {
@@ -35,7 +34,7 @@ export default function Counter() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
-    <div className={styles["counter"]}>
+    <div>
       <p>Count:{state.count}</p>
       <button onClick={() => dispatch({ type: "increment", payload: 10 })}>
         Increment 10
