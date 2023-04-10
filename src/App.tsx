@@ -13,6 +13,7 @@ import Box from "./components/context/Box";
 import ThemeContextProvider from "./components/context/ThemeContext";
 import UserContextProvider from "./components/context/UserContext";
 import User from "./components/state/User";
+import Counter from "./components/class/Counter";
 
 function App() {
   const personName = {
@@ -56,6 +57,7 @@ function App() {
       <UserContextProvider>
         <User />
       </UserContextProvider>
+      <Counter message="The count value is"></Counter>
     </div>
   );
 }
