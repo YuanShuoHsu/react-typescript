@@ -1,14 +1,14 @@
 import "./App.css";
 
-import Greet from "./components/Greet";
-import Person from "./components/Person";
-import PersonList from "./components/PersonList";
-import Status from "./components/Status";
-import Heading from "./components/Heading";
-import Oscar from "./components/Oscar";
-import Button from "./components/Button";
-import Input from "./components/Input";
-import Container from "./components/Container";
+import Greet from "./components/props/Greet";
+import Person from "./components/props/Person";
+import PersonList from "./components/props/PersonList";
+import Status from "./components/props/Status";
+import Heading from "./components/props/Heading";
+import Oscar from "./components/props/Oscar";
+import Button from "./components/props/Button";
+import Input from "./components/props/Input";
+import Container from "./components/props/Container";
 import Box from "./components/context/Box";
 import ThemeContextProvider from "./components/context/ThemeContext";
 import UserContextProvider from "./components/context/UserContext";
@@ -18,6 +18,7 @@ import Private from "./components/auth/Private";
 import Profile from "./components/auth/Profile";
 import List from "./components/generics/List";
 import RandomNumber from "./components/restriction/RandomNumber";
+import Toast from "./components/templateliterals/Toast";
 
 function App() {
   const personName = {
@@ -77,6 +78,7 @@ function App() {
         onClick={(item) => console.log(item)}
       />
       <RandomNumber value={10} isPositive />
+      <Toast position="center" />
     </div>
   );
 }
